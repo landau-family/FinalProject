@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Personal Area</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="./employer_personal_area.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Employer Personal Details -->
+    <h1>Welcome, <span id="employerName"></span>!</h1>
+    <div id="employerDetails">
+      <p><strong>ID Card:</strong> <span id="employerIDCard"></span></p>
+      <p><strong>Email:</strong> <span id="employerEmail"></span></p>
+      <p><strong>Name:</strong> <span id="employerFullName"></span></p>
+      <p><strong>Residential Area:</strong> <span id="employerResidentialArea"></span></p>
+    </div>
+    
+    <!-- Job Postings -->
+    <h2>Your Job Postings</h2>
+    <div id="employerJobPostings">
+      <!-- Display job postings here -->
+    </div>
+    
+    <!-- Update Personal Details Section -->
+    <div id="updateDetailsSection">
+      <h2>Update Personal Details</h2>
+      <form id="updateDetailsForm">
+        <!-- Input fields for updating personal details -->
+        <label for="employerName">Name:</label>
+        <input type="text" id="employerName" name="employerName" disabled>
+        <label for="employerEmail">Email:</label>
+        <input type="email" id="employerEmail" name="employerEmail" disabled>
+        <label for="employerIDCard">ID Card:</label>
+        <input type="text" id="employerIDCard" name="employerIDCard" disabled>
+        <label for="employerResidentialArea">Residential Area:</label>
+        <input type="text" id="employerResidentialArea" name="employerResidentialArea" disabled>
+        <!-- Add more input fields for other personal details -->
+        
+        <!-- Update and Finish Update buttons -->
+        <button type="button" id="updateBtn">Update Personal Details</button>
+        <button type="submit" id="finishUpdateBtn" style="display: none;">Finish Update</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Link to your JavaScript file -->
+  <script src="./employer_personal_area.js"></script>
+</body>
+</html>

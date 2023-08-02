@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PickAJob - Job Seeker Registration</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="./worker_register.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Seeker Registration</h1>
+    <form id="jobSeekerForm">
+      <label for="identityCard">Identity Card:</label>
+      <input type="text" id="identityCard" name="identityCard" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
+  <!-- Link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Link to your JavaScript file -->
+  <script src="job_seeker_registration.js"></script>
+</body>
+</html>

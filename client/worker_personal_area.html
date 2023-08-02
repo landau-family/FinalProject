@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Personal Area</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="./worker_personal_area.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Employee Personal Details -->
+    <h1>Welcome, <span id="employeeName"></span>!</h1>
+    <div id="employeeDetails">
+      <p><strong>ID Card:</strong> <span id="employeeIDCard"></span></p>
+      <p><strong>Email:</strong> <span id="employeeEmail"></span></p>
+      <p><strong>Name:</strong> <span id="employeeFullName"></span></p>
+    </div>
+    
+    <!-- Job Postings -->
+    <h2>Job Postings</h2>
+    <div id="jobPostings">
+      <!-- Display job postings here -->
+    </div>
+    
+    <!-- Update Personal Details Section -->
+    <div id="updateDetailsSection">
+      <h2>Update Personal Details</h2>
+      <form id="updateDetailsForm">
+        <!-- Input fields for updating personal details -->
+        <label for="employeeName">Name:</label>
+        <input type="text" id="employeeName2" name="employeeName" disabled>
+        <label for="employeeEmail">Email:</label>
+        <input type="email" id="employeeEmail2" name="employeeEmail" disabled>
+        <!-- <label for="employeeIDCard">ID Card:</label>
+        <input type="text" id="employeeIDCard" name="employeeIDCard" disabled> -->
+        <!-- Add more input fields for other personal details -->
+        
+        <!-- Update and Finish Update buttons -->
+        <button type="button" id="updateBtn">Update Personal Details</button>
+        <button type="submit" id="finishUpdateBtn" style="display: none;">Finish Update</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Link to your JavaScript file -->
+  <script src="./worker_personal_area.js"></script>
+</body>
+</html>
+

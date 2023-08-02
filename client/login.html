@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PickAJob - Login</title>
+      <!-- Link to your CSS file -->
+      <link rel="stylesheet" href="./style_login.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>Login to PickAJob</h1>
+        <form id="loginForm">
+          <label for="username">Email:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">ID:</label>
+          <input type="password" id="password" name="password" required>
+    
+          <div class="role-selection">
+            <input type="radio" id="employeeRole" name="role" value="employee" checked>
+            <label for="employeeRole">Employee</label>
+            <input type="radio" id="employerRole" name="role" value="employer">
+            <label for="employerRole">Employer</label>
+          </div>
+    
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="registration.html" id="a">Register here</a>.</p>
+      </div>
+      
+      <!-- Link to jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Link to your JavaScript file -->
+      <script src="./login.js"></script>
+    </body>
+    </html>
+    
